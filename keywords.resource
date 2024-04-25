@@ -7,13 +7,15 @@ Library                         CustomLibrary.py
 Setup and Open Posti Page
     [Documentation]   Opens the Posti website in a specified browser, handles browser options, and maximizes the window.
     Open Browser     ${HOME_URL}        ${BROWSER}
-    ...     options=add_argument("--disable-web-security"); add_argument("--no-sandbox"); add_argument("--disable-dev-shm-usage")
+    ...     options=add_argument("--disable-web-security"); add_argument("--no-sandbox"); add_argument("--disable-dev-shm-usage"); add_argument("--headless")
     Maximize Browser Window
 
 Handle Cookie Popup
-    Wait Until Element Is Visible         ${COOKIE_POP_UP_WINDOW}
-    ${popup_present}=    Run Keyword And Return Status    Element Should Be Visible    ${COOKIE_POP_UP_WINDOW}
-    Run Keyword If    ${popup_present}    Click Button    ${ACCEPT_COOKIE_BUTTON}
+    ${popup_present}=   Run Keyword And Return Status    Wait Until Element Is Visible   ${COOKIE_POP_UP_WINDOW}
+    Run Keyword If      '${popup_present}' == 'True'
+        ...    Click Button    ${ACCEPT_COOKIE_BUTTON}
+        ...    ELSE            Log    Cookie popup did not appear. Continuing without accepting cookies
+
 
 Click All Stamps Button
     Click Button By Xpath    ${ALL_STAMPS_BUTTON}
