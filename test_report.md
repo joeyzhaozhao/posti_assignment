@@ -75,6 +75,8 @@ Users can proceed to next checkout step after filling form correctly; informatio
 | User navigates to checkout page and fills checkout form   | Form accepts valid input and validates postal code correctly    | Same as expected outcome  | Pass   |
 | User proceeds to next step after filling form correctly   | Correct transition to next step and accurate information display| Same as expected outcome  | Pass   |
 
+# Example of Test Report
+<img width="452" alt="image" src="https://github.com/joeyzhaozhao/posti_assignment/assets/668344/94eb1ac5-b64b-437b-8855-051ca9cb0e03">
 
 
 
