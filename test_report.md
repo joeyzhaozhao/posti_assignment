@@ -19,6 +19,7 @@ We'll use Robot Framework for automated testing. The scripts will simulate user 
 
 ## Test Case 1: User adds desired stamp to cart
 **Objective:** Verify users can add a desired stamp to their cart on the Posti.fi/en website.
+
 **Steps:**
 - Handle Cookie Popup if displayed.
 - Click "All stamps" button on the homepage.
@@ -29,6 +30,7 @@ User successfully adds desired stamp to cart, and cart quantity updates accordin
 
 ## Test Case 2: Verify cart updates on increase and decrease button click
 **Objective:** Ensure cart updates correctly when user clicks increase and decrease buttons, and calculate delivery fee.
+
 **Steps:**
 - Click on cart button to navigate to cart page.
 - Increase cart quantity by 3 and verify update.
@@ -39,6 +41,7 @@ Cart quantity updates correctly; delivery fee calculated accurately.
 
 ## Test Case 3: User can add stamps and continue Shopping, then proceed to shopping cart
 **Objective:** Verify users can add stamps, continue shopping, and proceed to shopping cart.
+
 **Steps:**
 - Ensure "Continue Shopping" option is available on cart page.
 - Add another stamp to cart and continue shopping.
@@ -49,6 +52,7 @@ Users can add stamps, continue shopping, and proceed to checkout without issues.
 
 ## Test Case 4: User navigates to checkout page and fills checkout form
 **Objective:** Ensure users can navigate to checkout page, fill out form, and validate postal code format.
+
 **Steps:**
 - Click on "Checkout" button.
 - Fill out checkout form.
@@ -59,6 +63,7 @@ Users can navigate to checkout, fill out form, and correct postal code format is
 
 ## Test Case 5: User proceeds to next step after filling form correctly
 **Objective:** Verify users can proceed to next step after filling checkout form correctly.
+
 **Steps:**
 - Click "Save and Continue" button.
 - Verify information area on next page.
