@@ -25,7 +25,7 @@ We'll use Robot Framework for automated testing. The scripts will simulate user 
 - Click "All stamps" button on the homepage.
 - Add the desired stamp to the cart. If out of stock, choose alternative options.
 - Verify cart updates with the correct quantity.
-  
+
 **Outcome:** 
 User successfully adds desired stamp to cart, and cart quantity updates accordingly.
 
@@ -49,7 +49,7 @@ Cart quantity updates correctly; delivery fee calculated accurately.
 - Add another stamp to cart and continue shopping.
 - Navigate to shopping cart.
 - Calculate delivery fee and proceed to checkout.
-  
+
 **Outcome:** 
 Users can add stamps, continue shopping, and proceed to checkout without issues.
 
@@ -61,7 +61,7 @@ Users can add stamps, continue shopping, and proceed to checkout without issues.
 - Fill out checkout form.
 - Enter invalid postal code format and verify alert.
 - Enter valid postal code format.
-  
+
 **Outcome:** 
 Users can navigate to checkout, fill out form, and correct postal code format is validated.
 
@@ -71,7 +71,7 @@ Users can navigate to checkout, fill out form, and correct postal code format is
 **Steps:**
 - Click "Save and Continue" button.
 - Verify information area on next page.
-  
+
 **Outcome:** 
 Users can proceed to next checkout step after filling form correctly; information displayed accurately.
 
